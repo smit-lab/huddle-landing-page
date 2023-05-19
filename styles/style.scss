@@ -1,0 +1,136 @@
+@import "reset";
+@import "globals";
+@import "function";
+
+body {
+  background-color: $violet;
+}
+
+header {
+  padding: rem(20) rem(40) rem(40);
+}
+
+.navbar {
+  max-width: calc(100vw - rem(80));
+  margin: 0 auto;
+
+  &__logo {
+    width: rem(161.6);
+    height: rem(40);
+  }
+}
+
+.hero {
+  max-width: calc(100vw - rem(80));
+  margin: 0 auto rem(64);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__img {
+    width: rem(296);
+    height: rem(209);
+    margin-bottom: rem(60);
+  }
+
+  &-txt {
+    text-align: center;
+    color: #fff;
+
+    &__heading {
+      font-size: rem(24);
+      font-weight: 600;
+      margin-bottom: rem(16);
+    }
+
+    &__para {
+      font-weight: 400;
+      margin-bottom: rem(24);
+    }
+
+    &__cta {
+      background-color: #fff;
+      color: $violet;
+      font-size: rem(12);
+      padding: rem(11) rem(76);
+      border-radius: rem(100);
+      text-align: center;
+    }
+  }
+}
+
+.footer__social {
+  max-width: calc(100vw - rem(80));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(16);
+}
+
+.fa-brands {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .hero__img {
+    width: rem(424.88);
+    height: rem(300);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero,
+  .navbar {
+    max-width: rem(1275);
+  }
+
+  .navbar__logo {
+    width: rem(400);
+    height: rem(64);
+  }
+
+  .hero {
+    flex-direction: row;
+    gap: rem(59);
+    align-items: start;
+    margin-bottom: rem(10);
+    
+
+    &__img {
+      width: rem(696);
+      height: rem(493);
+    }
+
+    &-txt {
+      text-align: left;
+
+      &__heading {
+        font-size: rem(40);
+        margin-bottom: rem(24);
+      }
+      
+      &__para {
+        font-size: rem(18);
+      }
+
+      &__cta {
+        font-size: rem(18);
+        padding: rem(15) rem(64);
+      }
+    }
+  }
+
+
+  .footer__social {
+    justify-content: flex-end;
+    gap: rem(26);
+    margin-bottom: rem(24);
+  }
+
+  .fa-brands {
+    font-size: rem(32) !important;
+  }
+}
+
+

@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background-color: hsl(257, 40%, 49%);
+}
+
+header {
+  padding: 1.25rem 2.5rem 2.5rem;
+}
+
+.navbar {
+  max-width: calc(100vw - 5rem);
+  margin: 0 auto;
+}
+.navbar__logo {
+  width: 10.1rem;
+  height: 2.5rem;
+}
+
+.hero {
+  max-width: calc(100vw - 5rem);
+  margin: 0 auto 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero__img {
+  width: 18.5rem;
+  height: 13.0625rem;
+  margin-bottom: 3.75rem;
+}
+.hero-txt {
+  text-align: center;
+  color: #fff;
+}
+.hero-txt__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero-txt__para {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.hero-txt__cta {
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  font-size: 0.75rem;
+  padding: 0.6875rem 4.75rem;
+  border-radius: 6.25rem;
+  text-align: center;
+}
+
+.footer__social {
+  max-width: calc(100vw - 5rem);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.fa-brands {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .hero__img {
+    width: 26.555rem;
+    height: 18.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero,
+  .navbar {
+    max-width: 79.6875rem;
+  }
+  .navbar__logo {
+    width: 25rem;
+    height: 4rem;
+  }
+  .hero {
+    flex-direction: row;
+    gap: 3.6875rem;
+    align-items: start;
+    margin-bottom: 0.625rem;
+  }
+  .hero__img {
+    width: 43.5rem;
+    height: 30.8125rem;
+  }
+  .hero-txt {
+    text-align: left;
+  }
+  .hero-txt__heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-txt__para {
+    font-size: 1.125rem;
+  }
+  .hero-txt__cta {
+    font-size: 1.125rem;
+    padding: 0.9375rem 4rem;
+  }
+  .footer__social {
+    justify-content: flex-end;
+    gap: 1.625rem;
+    margin-bottom: 1.5rem;
+  }
+  .fa-brands {
+    font-size: 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
